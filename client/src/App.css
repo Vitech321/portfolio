@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #060606;
+}
+
+/* NAV */
+nav{
+    height: 60px;
+    width:100%;
+    background: linear-gradient(90deg, rgb(207,240,197) 0%, rgb(31, 182, 34) 100%);
+    box-shadow: 0 .2px 0 0 rgba(6, 6, 6, 0.2), 0 7px 20px 0 rgba(6, 6, 6, 0.2);
+}
+div.logo{
+    justify-self: start;
+    display: inline-block;
+    position: relative;
+    left: -8px;
+    top: 13px;
+}
+div.logo img {
+  height: 34px;
+  width:auto;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 60px;
+}
+nav a{
+    color: #060606;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active, nav ul a:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+
+.burger {
+    cursor: pointer;
+    margin-right: 40px;
+    margin-top: 17px;
+    float: right;
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #2f3640;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+div.toggle div.line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+div.toggle div.line2{
+    opacity: 0;
+}
+div.toggle div.line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    /* position: fixed; */
+    width: 100%;
+    background-color: #aaaaaa; 
+    color: white;
+    text-align: center;
+}
+
+
+
+
+/* PAGES */
+
+.homePage,
+.about,
+.contacts,
+.accountBoard {
+    display: flex;
+    height: 97vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #eeeeee;
+}
+
+
+
+/* FORM */
+
+.form-content {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+.form {
+    background: linear-gradient(
+    90deg,
+    rgb(207,240,197) 0%,
+    rgb(60, 216, 62) 100%
+  );
+    background-color: #cff0c5;
+    padding: 28px;
+    border-radius: 7px;
+    width: 200px;
+    text-transform: capitalize;
+    box-shadow: 0 5px 8px 0 rgba(6, 6, 6, 0.2), 0 7px 20px 0 rgba(6, 6, 6, 0.2);
+}
+.form-label {
+    display: block;
+}
+.form-input-title,
+.form-input-name,
+.form-input-surname,
+.form-input-email,
+.form-input-message,
+.form-input-recruiter {
+
+    width: 100%;
+}
+.form-input-title {
+    width: 30%;
+    margin-left: 5px;
+}
+form > h2 {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+.form-input-recruiter {
+    width: 14%;
+}
+.form-input-button {
+    width: 75px;
+    height: 30px;
+    font-size:medium;
+    margin-top: 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    box-shadow: 0 .1px .2px 0 rgba(31,182,34, 0.2), 0 .1px .2px 0 rgba(31,182,34, 0.2);
+    background-color: #eeeeee;
+}
+.form-inputs > p {
+    color: red;
+    text-transform: none;
+    font-size: small;
+}
+
+
+
+
+
+
+/* SMARTPHONE */ 
+
+@media (max-width: 874px) {
+
+
+    /* NAV */
+
+    nav {
+        position: fixed;
+    }
+    
+    nav ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 60px;
+        left:-100%;
+        text-align: center;
+        transition: all .4s ease-out;
+    }
+    nav li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+        color: #eeeeee;
+    }
+    a.active, nav ul a:hover{
+        border: none;
+        color:	#1fb622;
+    }
+    nav ul.show{
+        left:0;
+    }
+
+    .burger{
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .toggle {
+        cursor: pointer;
+        margin-right: 40px;
+        margin-top: 17px;
+        float: right;
+    }
+
+    .toggle div{
+        width: 25px;
+        height: 3px;
+        background-color: #2f3640;
+        margin: 5px;
+        transition: all 0.5s ease;
+    }
+
+}
+
+
