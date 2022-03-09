@@ -1,11 +1,11 @@
-const express = require('express').Router()
+
+//  CONTACT FORM
+const router = require('express').Router()
 const emailMe = require('../emailMe')
 const emailTo = require('../emailTo')
 
 
-const form = express.Router()
-
-form.post('/', async(req,res)=>{
+router.post('/', async(req,res)=>{
 
     myJson = Object.keys(req.body)
     myObj = JSON.parse(myJson[0])

@@ -8,10 +8,10 @@ export default function FormLogic(validate, callback) {
     const initialValues = {
 
         title:'Mr',
-        name:'vittorio ',
-        surname:'costa',
-        email:'ciccio@ciccio.com',
-        message:'ciaochefaistaseradovevai mia cara',
+        name:'',
+        surname:'',
+        email:'',
+        message:'',
         recruiter: false
         
     }
@@ -38,7 +38,6 @@ export default function FormLogic(validate, callback) {
         })
 
         
-
     }
 
     
@@ -64,7 +63,6 @@ export default function FormLogic(validate, callback) {
 
     } 
 
-    
 
     useEffect(()=>{
 
@@ -84,7 +82,7 @@ export default function FormLogic(validate, callback) {
     return { 
 
         handleChange, 
-        handleSubmit, 
+        handleSubmit,
         values, 
         errors
     }    

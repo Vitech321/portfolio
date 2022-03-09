@@ -24,7 +24,7 @@ export default function validate(values) {
         errors.email='email address is invalid'
     }
 
-    /* VALIDATE MESSAGE */
+    /* VALIDATE MESSAGE */  
 
     if(!values.message.trim()) {
         errors.message= 'message is required'

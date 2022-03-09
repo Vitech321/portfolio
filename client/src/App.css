@@ -101,7 +101,8 @@ div.toggle div.line3{
 .homePage,
 .about,
 .contacts,
-.accountBoard {
+.accountBoard,
+.register {
     display: flex;
     height: 97vh;
     align-items: center;
@@ -177,6 +178,56 @@ form > h2 {
     text-transform: none;
     font-size: small;
 }
+
+
+
+
+/* OTHER FORMS */
+
+.form-account-content {
+    background: linear-gradient(
+    90deg,
+    rgb(207,240,197) 0%,
+    rgb(60, 216, 62) 100%
+  );
+    background-color: #cff0c5;
+    padding: 28px;
+    border-radius: 7px;
+    width: 200px;
+    text-transform: capitalize;
+    box-shadow: 0 5px 8px 0 rgba(6, 6, 6, 0.2), 0 7px 20px 0 rgba(6, 6, 6, 0.2);
+}
+
+.form-account-label {
+    display: block;
+}
+
+form > h2 {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.form-account-submit {
+    width: 75px;
+    height: 25px;
+    font-size:small;
+    margin-top: 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    box-shadow: 0 .1px .2px 0 rgba(31,182,34, 0.2), 0 .1px .2px 0 rgba(31,182,34, 0.2);
+    background-color: #eeeeee;
+}
+.form-account-content > p {
+    color: red;
+    text-transform: none;
+    font-size: small;
+}
+
+.form-account-content > h4 {
+    margin-top: 15px;
+    
+}
+
 
 
 

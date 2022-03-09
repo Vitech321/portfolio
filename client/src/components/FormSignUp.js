@@ -2,7 +2,6 @@ import React from 'react'
 import formLogic from './formLogic'
 import validate from "./formValidate";
 
-
 function FormSignUp({submitting}) {
 
     const { 
@@ -10,7 +9,8 @@ function FormSignUp({submitting}) {
         handleChange, 
         handleSubmit, 
         values, 
-        errors
+        errors,
+        refElement
 
     } = formLogic(validate, submitting) 
 
@@ -37,6 +37,7 @@ function FormSignUp({submitting}) {
                 name='title'
                 value={values.title}
                 onChange={handleChange}
+                ref={refElement}
 
             >
                 <option value='Mr'>Mr</option>
@@ -116,6 +117,7 @@ function FormSignUp({submitting}) {
         
 
         <button className='form-input-button' type='submit'>send</button>
+        
     </form>
     </div>
   )

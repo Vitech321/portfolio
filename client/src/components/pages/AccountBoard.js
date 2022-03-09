@@ -1,11 +1,12 @@
 import React from 'react'
+import BoardLogin from '../BoadLogin'
 
 function AccountBoard() {
 
   return (
 
     <div className='accountBoard'>
-        <h1>hello from AccountBoard</h1>
+      <BoardLogin />
     </div>
   )
 }

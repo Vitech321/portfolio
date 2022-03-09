@@ -11,10 +11,12 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Contacts from './components/pages/Contacts';
 import AccountBoard from './components/pages/AccountBoard';
+import Register from './components/pages/Register';
 
 
 
 function App() {
+  
   return (
     <Router>
       
@@ -25,6 +27,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contacts' element={<Contacts />} />
         <Route path='/account' element={<AccountBoard />} />
+        <Route path='/register' element={<Register />} />
       </Switch>
       
       <Footer />
